@@ -20,8 +20,8 @@ int main() {
 
     if (option == 1) {
         // Cargar canciones y películas desde archivos CSV dentro de data/
-        auto songs = data.loadSongs("data/songs.csv");   // leer canciones
-        auto movies = data.loadMovies("data/movies.csv"); // leer películas
+        auto songs = data.loadSongs("data/songs_clean.csv");   // leer canciones limpias
+        auto movies = data.loadMovies("data/movies_clean.csv"); // leer películas limpias
 
         // Mostrar conteo básico
         std::cout << "Datos cargados correctamente!\n";
